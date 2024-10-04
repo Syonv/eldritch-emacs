@@ -76,6 +76,83 @@
    `(compilation-mode-line-exit ((t ,(list :foreground eldritch-yellow
 					   :bold t
 					   :inherit 'unspecified))))
+
+   ;; Completion
+   `(completions-annotations ((t (:inherit 'shadow))))
+
+   ;; Custom
+   `(custom-state ((t (:foreground ,eldritch-yellow))))
+
+   ;; Diff
+   `(diff-removed ((t ,(list :background nil
+			     :foreground eldritch-red))))
+   `(diff-added ((t ,(list :background nil
+			   :foreground eldritch-dark-green))))
+
+   ;; Dired
+   `(dired-directory ((t (:foreground ,eldritch-dark-cyan :weight bold))))
+   `(dired-ignore ((t ,(list :foreground eldritch-comment
+			     :inherit 'unspecified))))
+
+   ;; Eshell
+
+   ;; Font Lock
+   `(font-lock-builtin-face ((t (:foreground ,eldritch-green))))
+   `(font-lock-comment-face ((t (:foreground ,eldritch-comment))))
+   `(font-lock-comment-delimiter-face ((t (:foreground ,eldritch-comment))))
+   `(font-lock-constant-face ((t (:foreground ,eldritch-cyan))))
+   `(font-lock-doc-face ((t (:foreground ,eldritch-yellow))))
+   `(font-lock-doc-string-face ((t (:foreground ,eldritch-yellow))))
+   `(font-lock-function-name-face ((t (:foreground ,eldritch-purple))))
+   `(font-lock-keyword-face ((t (:foreground ,eldritch-green :bold t))))
+   `(font-lock-preprocessor-face ((t (:foreground ,eldritch-comment))))
+   `(font-lock-reference-face ((t (:foreground ,eldritch-comment))))
+   `(font-lock-string-face ((t (:foreground ,eldritch-yellow))))
+   `(font-lock-type-face ((t (:foreground ,eldritch-comment))))
+   `(font-lock-variable-name-face ((t (:foreground ,eldritch-orange))))
+   `(font-lock-warning-face ((t (:foreground ,eldritch-red))))
+
+   ;; Helm
+
+   ;; Ido
+
+   ;; Info
+
+   ;; Line highlighting
+
+   ;; Line numbers
+
+   ;; linum
+
+   ;; Magit
+
+   ;; Message
+
+   ;; Mode line
+
+   ;; Neo dir
+
+   ;; Org mode
+
+   ;; Perspective
+   `(persp-selected-face ((t (:foreground ,eldritch-green :bold t))))
+
+   ;; Search
+
+   ;; Sh
+
+   ;; Show paren
+
+   ;; Tuareg
+
+   ;; Speedbar
+
+   ;; Which function
+   `(which-func ((t (:foreground ,eldritch-magenta2))))
+
+   ;; Whitespace
+
+   ;; tab-bar
    ))
 
 ;;;###autoload
