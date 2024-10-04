@@ -33,6 +33,7 @@
       (eldritch-dark-green     "#33c57f")
       (eldritch-bright-red     "#f0313e")
       (eldritch-black          "#000000")
+      (eldritch-white          "#ffffff")
       )
   (custom-theme-set-variables
    'eldritch
@@ -132,10 +133,18 @@
    ;; linum
 
    ;; Magit
+   `(magit-branch ((t (:foreground ,eldritch-purple))))
 
    ;; Message
+   `(message-header-name ((t (:foreground ,eldritch-yellow))))
 
    ;; Mode line
+   `(mode-line ((t ,(list :background eldritch-bg-dark
+			  :foreground eldritch-foreground))))
+   `(mode-line-buffer-id ((t ,(list :background eldritch-bg-dark
+				    :foreground eldritch-foreground))))
+   `(mode-line-inactive ((t ,(list :background eldritch-bg-dark
+				   :foreground eldritch-fg-dark))))
 
    ;; Neo dir
 
@@ -145,10 +154,17 @@
    `(persp-selected-face ((t (:foreground ,eldritch-green :bold t))))
 
    ;; Search
+   `(isearch ((t ,(list :background eldritch-foreground
+			:foreground eldritch-black))))
+   `(isearch-fail ((t ,(list :background eldritch-bright-red
+			     :foreground eldritch-black))))
+   `(isearch-lazy-highlight-face ((t ,(list :background eldritch-visual
+					    :foreground eldritch-white))))
 
    ;; Sh
 
    ;; Show paren
+   ;; `(show-paren-match-face ((t (:background ))))
 
    ;; Tuareg
 
