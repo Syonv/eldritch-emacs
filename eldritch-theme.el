@@ -115,12 +115,19 @@
    ;; Helm
 
    ;; Ido
+   `(ido-first-match ((t (:foreground ,eldritch-green :bold nil))))
+   `(ido-only-match ((t (:foreground ,eldritch-pink :weight bold))))
+   `(ido-subdir ((t (:foreground ,eldritch-purple))))
 
    ;; Info
+   `(info-xref ((t (:foreground ,eldritch-purple))))
+   `(ìnfo-visited ((t (:foreground ,eldritch-dark-cyan))))
 
    ;; Line highlighting
 
    ;; Line numbers
+   `(line-number ((t (:inherit default :foreground ,eldritch-fg-gutter))))
+   `(line-number-current-line ((t (:inherit line-number :foreground ,eldritch-green))))
 
    ;; linum
 
