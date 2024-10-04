@@ -17,7 +17,7 @@
       (eldritch-purple         "#a48cf2")
       (eldritch-red            "#f16c75")
       (eldritch-yellow         "#f1fc79")
-      (eldritch-g-dark         "#171928")
+      (eldritch-bg-dark        "#171928")
       (eldritch-bg-highlight   "#292e42")
       (eldritch-terminal-black "#414868")
       (eldritch-fg-dark        "#abb4da")
@@ -32,4 +32,55 @@
       (eldritch-dark-yellow    "#c0c95f")
       (eldritch-dark-green     "#33c57f")
       (eldritch-bright-red     "#f0313e")
-      ))
+      (eldritch-black          "#000000")
+      )
+  (custom-theme-set-variables
+   'eldritch
+   '(frame-background-mode (quote dark)))
+
+  (custom-theme-set-faces
+   'eldritch
+
+   ;; Basic coloring
+   `(border ((t ,(list :background eldritch-bg-dark
+		       :foreground eldritch-bg-highlight))))
+   `(cursor ((t (:background ,eldritch-green))))
+   `(default ((t ,(list :background eldritch-background
+			:foreground eldritch-foreground))))
+   `(fringe ((t ,(list :background nil
+		       :foreground eldritch-dark3))))
+   `(vertical-border ((t (:foreground ,eldritch-bg-highlight))))
+   `(link ((t (:foreground ,eldritch-cyan))))
+   `(link-visited ((t (:foreground ,eldritch-dark-cyan))))
+   `(match ((t (:background ,eldritch-visual))))
+   `(shadow ((t (:foreground ,eldritch-visual))))
+   `(minibuffer-prompt ((t (:foreground ,eldritch-cyan))))
+   `(region ((t (:background ,eldritch-magenta3))))
+   `(secondary-selection ((t ,(list :background eldritch-magenta3
+				    :foreground nil))))
+   `(trailing-whitespace ((t ,(list :background eldritch-red
+				    :foreground eldritch-black))))
+   `(tooltip ((t ,(list :background eldritch-visual
+			:foreground eldritch-foreground))))
+
+   ;; Compilation
+   `(compilation-info ((t ,(list :foreground eldritch-yellow
+				 :inherit 'unspecified))))
+   `(compilation-warning ((t ,(list :foreground eldritch-orange
+				    :bold t
+				    :inherit 'unspecified))))
+   `(compilation-error ((t (:foreground ,eldritch-red))))
+   `(compilation-mode-line-fail ((t ,(list :foreground eldritch-bright-red
+					   :bold t
+					   :inherit 'unspecified))))
+   `(compilation-mode-line-exit ((t ,(list :foreground eldritch-yellow
+					   :bold t
+					   :inherit 'unspecified))))
+   ))
+
+;;;###autoload
+(when load-file-name
+  (add-to-list 'custom-theme-load-path
+               (file-name-as-directory (file-name-directory load-file-name))))
+
+(provide-theme 'eldritch)
