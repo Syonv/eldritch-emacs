@@ -109,11 +109,12 @@
    `(font-lock-preprocessor-face ((t (:foreground ,eldritch-comment))))
    `(font-lock-reference-face ((t (:foreground ,eldritch-comment))))
    `(font-lock-string-face ((t (:foreground ,eldritch-yellow))))
-   `(font-lock-type-face ((t (:foreground ,eldritch-comment))))
+   `(font-lock-type-face ((t (:foreground ,eldritch-magenta2))))
    `(font-lock-variable-name-face ((t (:foreground ,eldritch-orange))))
    `(font-lock-warning-face ((t (:foreground ,eldritch-red))))
    `(font-lock-number-face ((t (:foreground ,eldritch-green))))
    `(font-lock-operator-face ((t (:foreground ,eldritch-purple))))
+   `(font-lock-negation-char-face ((t (:foreground ,eldritch-pink))))
 
    ;; Helm
    `(helm-ff-directory ((t ,(list :background eldritch-background
@@ -163,7 +164,33 @@
    ;; linum
 
    ;; Magit
-   `(magit-branch ((t (:foreground ,eldritch-purple))))
+   `(magit-branch-local ((t (:foreground ,eldritch-pink))))
+   `(magit-branch-remote ((t (:foreground ,eldritch-purple))))
+   `(magit-refname ((t (:foreground ,eldritch-dark-cyan))))
+   `(magit-tag ((t (:foreground ,eldritch-orange))))
+   `(magit-hash ((t (:foreground ,eldritch-comment))))
+   `(magit-dimmed ((t (:foreground ,eldritch-comment))))
+   `(magit-section-heading ((t (:foreground ,eldritch-green :weight bold))))
+   `(magit-section-highlight ((t (:background ,eldritch-currentline))))
+   `(magit-diff-context ((t (:foreground ,eldritch-fg-dark :extend t))))
+   `(magit-diff-context-highlight ((t (:foreground ,eldritch-foreground :inherit magit-section-highlight))))
+   `(magit-diff-revision-summary ((t ,(list :background eldritch-background
+					    :foreground eldritch-orange
+					    :weight 'bold))))
+   `(magit-diff-revision-highlight-summary ((t ,(list :foreground eldritch-orange
+						      :inherit 'magit-section-highlight
+						      :weight 'bold))))
+   `(magit-diff-added ((t ,(list :bacground eldritch-background
+				 :foreground eldritch-pink))))
+   `(magit-diff-added-highlight ((t ,(list :background eldritch-currentline
+					   :foreground eldritch-pink))))
+   `(magit-diff-removed ((t ,(list :background eldritch-background
+				   :foreground eldritch-red))))
+   `(magit-diff-removed-highlight ((t ,(list :background eldritch-currentline
+					     :foreground eldritch-red))))
+   `(magit-diff-file-heading ((t (:foreground ,eldritch-foreground))))
+   `(magit-diff-file-heading-highlight ((t (list :inherit magit-section-highlight
+						 :weight bold))))
 
    ;; Message
    `(message-header-name ((t (:foreground ,eldritch-yellow))))
