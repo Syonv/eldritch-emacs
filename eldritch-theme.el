@@ -112,8 +112,38 @@
    `(font-lock-type-face ((t (:foreground ,eldritch-comment))))
    `(font-lock-variable-name-face ((t (:foreground ,eldritch-orange))))
    `(font-lock-warning-face ((t (:foreground ,eldritch-red))))
+   `(font-lock-number-face ((t (:foreground ,eldritch-green))))
+   `(font-lock-operator-face ((t (:foreground ,eldritch-purple))))
 
    ;; Helm
+   `(helm-ff-directory ((t ,(list :background eldritch-background
+				  :foreground eldritch-purple
+				  :bold t))))
+   `(helm-ff-dotted-directory ((t ,(list :background eldritch-background
+					 :foreground eldritch-purple
+					 :weight 'normal))))
+   `(helm-candidate-number ((t ,(list :background eldritch-foreground
+				      :foreground eldritch-background))))
+   `(helm-ff-executable ((t (:foreground ,eldritch-yellow))))
+   `(helm-ff-file ((t (:foreground ,eldritch-foreground))))
+   `(helm-ff-invalid-symlink ((t ,(list :background eldritch-red
+					:foreground eldritch-bg-dark))))
+   `(helm-ff-symlink ((t (:foreground ,eldritch-green))))
+   `(helm-header ((t ,(list :background eldritch-background
+			    :foreground eldritch-fg-dark
+			    :underline nil
+			    :box nil))))
+   `(helm-moccur-buffer ((t ,(list :background eldritch-background
+				   :foreground eldritch-purple))))
+   `(helm-selection ((t ,(list :background eldritch-currentline
+			       :underline nil))))
+   `(helm-selection-line ((t (:foreground ,eldritch-currentline))))
+   `(helm-separator ((t ,(list :background eldritch-background
+			       :foreground eldritch-green))))
+   `(helm-source-header ((t ,(list :background eldritch-background
+				   :foreground eldritch-green
+				   :box (list :line-width -1
+					      :style 'released-button)))))
 
    ;; Ido
    `(ido-first-match ((t (:foreground ,eldritch-green :bold nil))))
