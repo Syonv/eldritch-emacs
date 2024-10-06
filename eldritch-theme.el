@@ -191,7 +191,35 @@
    `(magit-diff-file-heading ((t (:foreground ,eldritch-foreground))))
    `(magit-diff-file-heading-highlight ((t (list :inherit magit-section-highlight
 						 :weight bold))))
-   `()
+   `(magit-diff-file-heading-selection ((t (list :foreground ,eldritch-green
+						 :inherit magit-diff-file-heading-highlight))))
+   `(magit-diff-hunk-heading ((t (list :background ,eldritch-fg-gutter
+				       :inherit magit-diff-contect))))
+   `(magit-diff-hunk-heading-highlight ((t (list :inherit magit-diff-context-highlight
+						 :weight bold))))
+   `(magit-diff-hunk-heading-selection ((t (list :foreground ,eldritch-green
+						 :inherit magit-diff-hunk-heading-highlight))))
+   `(magit-diff-lines-heading ((t (list :foreground ,eldritch-green
+					:inherit magit-diff-hunk-heading-highlight))))
+   `(magit-diff-lines-boundary ((t (:background ,eldritch-green))))
+   `(magit-diffstat-added ((t (:foreground ,eldritch-cyan))))
+   `(magit-diffstat-removed ((t (:foreground ,eldritch-red))))
+   `(magit-log-author ((t (:foreground ,eldritch-comment))))
+   `(magit-log-date ((t (:foreground ,eldritch-comment))))
+   `(magit-log-graph ((t (:foreground ,eldritch-yellow))))
+   `(magit-process-ng ((t ,(list :foreground eldritch-orange
+				 :weight 'bold))))
+   `(magit-process-ok ((t ,(list :foreground eldritch-pink
+				 :weight 'bold))))
+   `(magit-signature-good ((t (:foreground ,eldritch-pink))))
+   `(magit-signature-bad ((t ,(list :foreground eldritch-red
+				    :weight 'bold))))
+   `(magit-signature-untrusted ((t (:foreground ,eldritch-cyan))))
+   `(magit-signature-expired ((t (:foreground ,eldritch-orange))))
+   `(magit-signature-revoked ((t (:foreground ,eldritch-magenta2))))
+   `(magit-signature-error ((t (:foreground ,eldritch-cyan))))
+   `(magit-cherry-unmatched ((t (:foreground ,eldritch-cyan))))
+   `(magit-cherry-equivalent ((t (:foreground ,eldritch-magenta2))))
 
    ;; Message
    `(message-header-name ((t (:foreground ,eldritch-yellow))))
