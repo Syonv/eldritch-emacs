@@ -106,7 +106,7 @@
    `(font-lock-doc-string-face ((t (:foreground ,eldritch-yellow))))
    `(font-lock-function-name-face ((t (:foreground ,eldritch-purple))))
    `(font-lock-keyword-face ((t (:foreground ,eldritch-green :bold t))))
-   `(font-lock-preprocessor-face ((t (:foreground ,eldritch-comment))))
+   `(font-lock-preprocessor-face ((t (:foreground ,eldritch-dark-cyan))))
    `(font-lock-reference-face ((t (:foreground ,eldritch-comment))))
    `(font-lock-string-face ((t (:foreground ,eldritch-yellow))))
    `(font-lock-type-face ((t (:foreground ,eldritch-magenta2))))
@@ -191,6 +191,7 @@
    `(magit-diff-file-heading ((t (:foreground ,eldritch-foreground))))
    `(magit-diff-file-heading-highlight ((t (list :inherit magit-section-highlight
 						 :weight bold))))
+   `()
 
    ;; Message
    `(message-header-name ((t (:foreground ,eldritch-yellow))))
