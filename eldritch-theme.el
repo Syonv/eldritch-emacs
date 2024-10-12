@@ -153,7 +153,7 @@
 
    ;; Info
    `(info-xref ((t (:foreground ,eldritch-purple))))
-   `(ìnfo-visited ((t (:foreground ,eldritch-dark-cyan))))
+   `(info-visited ((t (:foreground ,eldritch-dark-cyan))))
 
    ;; Line highlighting
 
@@ -249,8 +249,15 @@
 
    ;; Sh
 
-   ;; Show paren
-   ;; `(show-paren-match-face ((t (:background ))))
+   ;; show-paren
+   `(show-paren-match-face ((t ,(list :background 'unspecified
+				      :foreground eldritch-cyan
+				      :weight 'bold))))
+   `(show-paren-match ((t ,(list :background 'unspecified
+				 :foreground eldritch-cyan
+				 :weight 'bold))))
+   `(show-paren-match-expression ((t (:inherit match))))
+   `(show-paren-mismatch ((t (:inherit font-lock-warning-face))))
 
    ;; Tuareg
 
