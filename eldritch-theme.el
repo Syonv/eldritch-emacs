@@ -156,6 +156,8 @@
    `(info-visited ((t (:foreground ,eldritch-dark-cyan))))
 
    ;; Line highlighting
+   `(highlight ((t (:background ,eldritch-bg-highlight :foreground nil))))
+   `(highlight-current-line-face ((t (:background ,eldritch-bg-highlight :foreground nil))))
 
    ;; Line numbers
    `(line-number ((t (:inherit default :foreground ,eldritch-fg-gutter))))
