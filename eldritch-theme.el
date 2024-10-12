@@ -250,14 +250,10 @@
    ;; Sh
 
    ;; show-paren
-   `(show-paren-match-face ((t ,(list :background 'unspecified
-				      :foreground eldritch-cyan
-				      :weight 'bold))))
-   `(show-paren-match ((t ,(list :background 'unspecified
-				 :foreground eldritch-cyan
-				 :weight 'bold))))
+   `(show-paren-match-face ((t (:background ,eldritch-cyan))))
+   `(show-paren-match-face ((t (:background ,eldritch-cyan))))
    `(show-paren-match-expression ((t (:inherit match))))
-   `(show-paren-mismatch ((t (:inherit font-lock-warning-face))))
+   `(show-paren-mismatch ((t (:background ,eldritch-red))))
 
    ;; Tuareg
 
