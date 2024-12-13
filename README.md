@@ -13,7 +13,18 @@ Main Theme repo can be found [here](https://github.com/eldritch-theme/eldritch)
 <img src="screenshot.png" alt="Screenshot"/><br/>
 
 ### Installation
-1. Any instructions on how to install here
+Download the eldritch-theme.el file or clone the repo in a location of your choice.
+
+### Usage
+Add to your *.emacs* or *init.el*:
+
+```elisp
+(load-file "path/to/eldritch-theme.el")
+(load-theme 'eldritch t)
+```
+
+Execute each line or restart Emacs.
+
 
 <!-- If you want to provide install from source options, you can use the following template: -->
 <!-- ### Installation From Source -->
